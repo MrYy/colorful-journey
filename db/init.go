@@ -30,7 +30,7 @@ func Init() error {
 		pwd = "HRRd2GBm"
 	}
 	if addr == "" {
-		addr = "sh-cynosdbmysql-grp-ggs7of2w.sql.tencentcdb.com:22291\n"
+		addr = "sh-cynosdbmysql-grp-ggs7of2w.sql.tencentcdb.com:22291"
 	}
 	source = fmt.Sprintf(source, user, pwd, addr, dataBase)
 	fmt.Println("start init mysql with ", source)
