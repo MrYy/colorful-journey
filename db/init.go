@@ -23,6 +23,15 @@ func Init() error {
 	if dataBase == "" {
 		dataBase = "golang_demo"
 	}
+	if user == "" {
+		user = "root"
+	}
+	if pwd == "" {
+		pwd = "HRRd2GBm"
+	}
+	if addr == "" {
+		addr = "sh-cynosdbmysql-grp-ggs7of2w.sql.tencentcdb.com:22291\n"
+	}
 	source = fmt.Sprintf(source, user, pwd, addr, dataBase)
 	fmt.Println("start init mysql with ", source)
 
