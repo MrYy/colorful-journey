@@ -21,7 +21,7 @@ func Init() error {
 	addr := os.Getenv("MYSQL_ADDRESS")
 	dataBase := os.Getenv("MYSQL_DATABASE")
 	if dataBase == "" {
-		dataBase = "golang_demo"
+		dataBase = "colorful_journey"
 	}
 	if user == "" {
 		user = "root"

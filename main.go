@@ -15,6 +15,6 @@ func main() {
 
 	http.HandleFunc("/", service.IndexHandler)
 	http.HandleFunc("/api/count", service.CounterHandler)
-
+	http.HandleFunc("/api/student", service.StudentHandler)
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
